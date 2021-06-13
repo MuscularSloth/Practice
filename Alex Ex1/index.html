@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex1 - Fetch</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+
+<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">AddUser</button>
+<div class="wrapper"></div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add new user</h5>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="exampleInputName">User Name</label>
+                    <input type="text" class="form-control" id="exampleInputName" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail">User email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputCity">User city</label>
+                    <input type="text" class="form-control" id="exampleInputCity" placeholder="Enter city">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputStreet">User street</label>
+                    <input type="text" class="form-control" id="exampleInputStreet" placeholder="Enter street">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputSuite">User suite</label>
+                    <input type="text" class="form-control" id="exampleInputSuite" placeholder="Enter suite">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputCompanyname">User company name</label>
+                    <input type="text" class="form-control" id="exampleInputCompanyname" placeholder="Enter company name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputZipcode">User zipcode</label>
+                    <input type="text" class="form-control" id="exampleInputZipcode" placeholder="Enter zipcode">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="close-modal" type="button" class="btn btn-dark close-modal" data-dismiss="modal">Close</button>
+                <button id="saveNewUser" type="button" class="btn btn-success save-new-user">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="showDataModal" tabindex="-1" role="dialog" aria-labelledby="showDataModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="showDataModalLabel">Add new user</h5>
+            </div>
+            <div class="modal-body">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title" id="showDataModalEmail">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted" id="showDataModalCity">
+                            Card subtitle
+                        </h6>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <ul id="showDataModalCompany" class="list-group list-group-flush">
+                            <li class="list-group-item" >Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="showDataModal-close-modal" type="button" class="btn btn-dark close-modal" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
